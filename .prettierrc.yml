@@ -1,0 +1,4 @@
+endOfLine: lf
+singleQuote: true
+quoteProps: consistent
+trailingComma: all
