@@ -15,7 +15,7 @@ Parameters:
 - `name`: The name of the dependency to extract documentation for.
 - `dependant_path`: The path to the dependant project.
 
-This is equivalent to [`daipendency extract-dep`](https://github.com/daipendency/daipendency#daipendency-extract-dep-extract-the-documentation-of-a-dependency-in-a-crate).
+This is equivalent to [`daipendency extract-dep`](https://github.com/daipendency/daipendency#daipendency-extract-dep-extract-the-documentation-of-a-dependency).
 
 ## Usage
 
