@@ -4,20 +4,7 @@ JavaScript implementation of a Model Context Protocol (MCP) server for [Daipende
 
 ## Install
 
-Register the server in your MCP configuration file. For example:
-
-```json
-{
-  "mcpServers": {
-    "daipendency": {
-      "command": "npx",
-      "args": ["-y", "@daipendency/mcp"],
-      "disabled": false,
-      "autoApprove": []
-    }
-  }
-}
-```
+Use `npx -y @daipendency/mcp` to run this MCP server with stdio.
 
 ## API
 
