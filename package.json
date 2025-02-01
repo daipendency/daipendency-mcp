@@ -1,6 +1,6 @@
 {
   "name": "@daipendency/mcp",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "Model Context Protocol (MCP) server for Daipendency",
   "publishConfig": {
     "access": "public"
@@ -10,8 +10,9 @@
     "mcp",
     "model context protocol"
   ],
-  "bin": "dist/index.js",
-  "main": "dist/index.js",
+  "bin": {
+    "daipendency-mcp": "dist/index.js"
+  },
   "type": "module",
   "scripts": {
     "build": "tsc",
