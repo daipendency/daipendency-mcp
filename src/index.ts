@@ -1,9 +1,8 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
-import { execFile } from 'node:child_process';
-import { promisify } from 'node:util';
 import { z } from 'zod';
 import { createRequire } from 'node:module';
+import { Library } from '@daipendency/core';
 
 const require = createRequire(import.meta.url);
 const packageJson = require('../package.json');
@@ -19,15 +18,8 @@ async function extractDependencyDocs(
   name: string,
   dependant_path: string,
 ): Promise<string> {
-  const execFileAsync = promisify(execFile);
-  const args = ['extract-dep', name, '--dependant', dependant_path];
-
-  try {
-    const { stdout } = await execFileAsync('daipendency', args);
-    return stdout;
-  } catch (error: any) {
-    throw new Error(error.stderr || error.message);
-  }
+  const dependency = await Library.loadDependency(name, dependant_path);
+  return dependency.generateMarkdownDocumentation();
 }
 
 server.tool(
