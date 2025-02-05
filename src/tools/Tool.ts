@@ -1,7 +1,7 @@
 import type { ToolCallback } from '@modelcontextprotocol/sdk/server/mcp.js';
-import type { ZodRawShape } from 'zod';
+import type { ToolParameters } from './ToolParameters.js';
 
-export interface Tool<Params extends ZodRawShape> {
+export interface Tool<Params extends ToolParameters> {
   name: string;
   description: string;
   parameters: Params;
