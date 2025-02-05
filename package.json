@@ -1,6 +1,6 @@
 {
   "name": "@daipendency/mcp",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "Model Context Protocol (MCP) server for Daipendency",
   "repository": {
     "type": "git",
