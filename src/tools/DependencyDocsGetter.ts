@@ -4,8 +4,13 @@ import { z } from 'zod';
 import { Tool } from './Tool.js';
 
 const dependencyDocsGetterParameters = {
-  name: z.string(),
-  dependant_path: z.string(),
+  name: z.string({
+    description:
+      'The name of the dependency for which to extract documentation',
+  }),
+  dependant_path: z.string({
+    description: 'The absolute path to the dependant project',
+  }),
 } as const;
 
 async function extractDependencyDocs(

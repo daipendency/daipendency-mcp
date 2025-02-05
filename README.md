@@ -14,11 +14,6 @@ Use `npx -y @daipendency/mcp` to run this MCP server with stdio.
 
 Extract narrative and API documentation for a dependency of a local project.
 
-Parameters:
-
-- `name`: The name of the dependency to extract documentation for.
-- `dependant_path`: The path to the dependant project.
-
 This is equivalent to [`daipendency extract-dep`](https://github.com/daipendency/daipendency#daipendency-extract-dep-extract-the-documentation-of-a-dependency).
 
 ## Architectural Decisions
