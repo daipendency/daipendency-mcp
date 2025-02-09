@@ -6,6 +6,7 @@ import { ALL_TOOLS } from './tools/index.js';
 import packageJson from '../package.json' assert { type: 'json' };
 import type { Tool } from './tools/Tool.js';
 import type { ToolParameters } from './tools/ToolParameters.js';
+
 const INSTRUCTIONS = `Extract narrative and API documentation from dependencies.
 
 Only Rust projects are currently supported.
